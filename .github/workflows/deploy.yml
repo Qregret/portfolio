@@ -1,0 +1,55 @@
+name: Deploy Portfolio to Lightsail
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build Frontend
+        run: |
+          npm ci || npm install
+          npm run build
+
+      - name: Prepare Deployment Directory
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            sudo rm -rf /var/www/junyuc.me/*
+            sudo mkdir -p /var/www/junyuc.me
+            sudo chown -R ubuntu:ubuntu /var/www/junyuc.me
+
+      - name: SCP Frontend Files
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "dist/*"
+          target: "/var/www/junyuc.me"
+          strip_components: 1
+
+      - name: Restore Permissions and Restart NGINX
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            sudo chown -R www-data:www-data /var/www/junyuc.me
+            sudo chmod -R 755 /var/www/junyuc.me
+            sudo systemctl restart nginx
