@@ -39,7 +39,7 @@ export const projects: Project[] = [
   },
   {
     id: "bus-alight-prediction",
-    name: "智慧公交客流预测与智能调度系统",
+    name: "基于图增强与 RAG 的智慧公交调度系统 (Graph-enhanced Transit Dispatch System)",
     period: "2025.10 - 至今",
     role: "全栈开发",
     status: "已上线",
