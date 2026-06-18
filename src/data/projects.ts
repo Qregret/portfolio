@@ -39,7 +39,7 @@ export const projects: Project[] = [
   },
   {
     id: "bus-alight-prediction",
-    name: "基于图增强模型的公交下车站点预测系统",
+    name: "智慧公交客流预测与智能调度系统",
     period: "2025.10 - 至今",
     role: "全栈开发",
     status: "已上线",
