@@ -46,6 +46,7 @@ export const projects: Project[] = [
     techStack: ["Python", "机器学习", "图增强模型", "候选召回", "排序模型", "数据预处理", "模型评估"],
     highlights: ["负责数据处理、候选站点生成、预测模型设计、接口封装和实验结果分析，重点优化 Top-K 候选中的 Top1 预测效果。"],
     demoUrl: "http://13.114.177.156/",
+    githubUrl: "https://github.com/Qregret/graph-enhanced-bus-prediction",
     cover: "/images/bus-alight-prediction/1.png",
     screenshots: [
       "/images/bus-alight-prediction/1.png",
@@ -68,6 +69,7 @@ export const projects: Project[] = [
     techStack: ["ESP32", "MQTT", "Spring Boot", "Vue", "RFID", "人脸识别 API", "WebSocket"],
     highlights: ["实现硬件端与后端的数据交互，完成认证流程、消息通信和座位状态展示。"],
     demoUrl: "http://13.213.88.162/",
+    githubUrl: "https://github.com/Qregret/esp32-intelligent-seating",
     cover: "/images/esp32-seat-cover.png",
     screenshots: [
       "/images/esp32-seat-1.png",
