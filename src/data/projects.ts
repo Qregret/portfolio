@@ -129,7 +129,7 @@ export const projects: Project[] = [
     period: "2024.01 - 2024.08",
     role: "核心开发者",
     status: "往期项目",
-    description: "本项目为<strong class=\"bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-400 px-1.5 py-0.5 rounded font-bold mx-1\">本科毕业设计项目</strong>，聚焦城市公共交通客流分析，基于大数据处理框架 Spark 对海量公交刷卡和定位数据进行离线与实时分析，挖掘乘客出行起始点（OD）的时空分布规律，为城市交通规划和公交线路优化提供数据支撑。注：本项目仅作成果展示未独立部署，其核心功能现已<strong class=\"bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-400 px-1.5 py-0.5 rounded font-bold mx-1\">整合升级</strong>至前文的“基于图增强模型的公交下车站点预测系统”中。",
+    description: "本项目为<strong class=\"bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-400 px-1.5 py-0.5 rounded font-bold mx-1\">本科毕业设计项目</strong>，聚焦城市公共交通客流分析，基于大数据处理框架 Spark 对海量公交刷卡和定位数据进行离线与实时分析，挖掘乘客出行起始点（OD）的时空分布规律，为城市交通规划和公交线路优化提供数据支撑。注：本项目仅作成果展示未独立部署，其核心功能现已<strong class=\"bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-400 px-1.5 py-0.5 rounded font-bold mx-1\">整合升级</strong>至前文的“基于图增强与 RAG 的智慧公交调度系统”中。",
     techStack: ["Spark", "大数据处理", "数据分析", "数据预处理", "时空特征提取"],
     highlights: [
       "🏆 荣获 2024 年第 17 届中国大学生计算机设计大赛 全国二等奖",
