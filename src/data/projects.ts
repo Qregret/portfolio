@@ -52,7 +52,8 @@ export const projects: Project[] = [
       "/images/bus-alight-prediction/overview.png",
       "/images/bus-alight-prediction/map-dispatch.png",
       "/images/bus-alight-prediction/analytics.png",
-      "/images/bus-alight-prediction/forecast.png"
+      "/images/bus-alight-prediction/forecast.png",
+      "/images/bus-alight-prediction/dashboard.png"
     ],
     visible: true,
   },
