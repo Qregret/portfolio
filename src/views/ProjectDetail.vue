@@ -97,8 +97,8 @@ const handleLinkClick = (e: Event, url: string, projectId: string) => {
             </h2>
             
             <div v-if="project.screenshots && project.screenshots.length > 0" class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-              <div v-for="(img, idx) in project.screenshots" :key="idx" class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-50 dark:bg-slate-800/50 flex items-center justify-center h-48 cursor-pointer">
-                <img :src="img" :alt="`${project.name} 展示图 ${idx + 1}`" class="w-full h-full object-cover hover:scale-[1.05] transition-transform duration-500" />
+              <div v-for="(img, idx) in project.screenshots" :key="idx" class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-800 flex items-center justify-center h-48 sm:h-56 cursor-pointer group">
+                <img :src="img" :alt="`${project.name} 展示图 ${idx + 1}`" class="w-full h-full object-contain p-2 hover:scale-[1.03] transition-transform duration-500" />
               </div>
             </div>
             <div v-else-if="project.cover" class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm">
