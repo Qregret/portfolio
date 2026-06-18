@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { GraduationCap } from 'lucide-vue-next'
 
 const timelineEvents = [
   {
@@ -84,7 +83,7 @@ const onScroll = () => {
           <div class="flex justify-between items-start mb-3 sm:mb-6">
             <div class="flex items-center space-x-3 sm:space-x-4">
               <div class="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl" :class="event.colorLight">
-                <component v-if="event.icon" :is="event.icon" :size="18" class="sm:w-6 sm:h-6" />
+                <component v-if="(event as any).icon" :is="(event as any).icon" :size="18" class="sm:w-6 sm:h-6" />
                 <img v-if="event.iconUrl" :src="event.iconUrl" class="w-6 h-6 sm:w-8 sm:h-8 object-contain" />
               </div>
               <div>

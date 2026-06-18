@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import { Download, Mail, Terminal, Code, Cpu, Brain, Trophy, LayoutGrid } from 'lucide-vue-next'
+import { Download, Terminal, Code, Cpu, Brain, Trophy, LayoutGrid } from 'lucide-vue-next'
 
 const router = useRouter()
 </script>
