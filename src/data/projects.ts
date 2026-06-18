@@ -47,15 +47,12 @@ export const projects: Project[] = [
     highlights: ["负责数据处理、候选站点生成、预测模型设计、接口封装和实验结果分析，重点优化 Top-K 候选中的 Top1 预测效果。"],
     demoUrl: "http://13.114.177.156/",
     githubUrl: "https://github.com/Qregret/graph-enhanced-bus-prediction",
-    cover: "/images/bus-alight-prediction/1.png",
+    cover: "/images/bus-alight-prediction/overview.png",
     screenshots: [
-      "/images/bus-alight-prediction/1.png",
-      "/images/bus-alight-prediction/2.png",
-      "/images/bus-alight-prediction/3.png",
-      "/images/bus-alight-prediction/4.png",
-      "/images/bus-alight-prediction/5.png",
-      "/images/bus-alight-prediction/6.png",
-      "/images/bus-alight-prediction/7.png"
+      "/images/bus-alight-prediction/overview.png",
+      "/images/bus-alight-prediction/map-dispatch.png",
+      "/images/bus-alight-prediction/analytics.png",
+      "/images/bus-alight-prediction/forecast.png"
     ],
     visible: true,
   },
