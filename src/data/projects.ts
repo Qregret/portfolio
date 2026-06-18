@@ -27,6 +27,7 @@ export const projects: Project[] = [
     techStack: ["Vue", "Vercel", "前端工程化", "数据展示"],
     highlights: ["完成项目页面设计、功能模块开发和在线部署；", "通过该项目熟悉前端工程化、页面交互、个人项目上线流程。"],
     demoUrl: "https://kg.junyuc.me",
+    githubUrl: "https://github.com/Qregret/power",
     cover: "/images/exam-assistant/1.png",
     screenshots: [
       "/images/exam-assistant/1.png",
