@@ -9,7 +9,7 @@ const router = useRouter()
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
     <!-- Hero Section -->
     <div class="flex flex-col lg:flex-row items-center justify-center gap-5 sm:gap-8 lg:gap-16">
-      <div class="flex-1 text-center lg:text-left">
+      <div class="flex-1 w-full max-w-md sm:max-w-lg lg:max-w-none text-center lg:text-left">
         <div class="inline-flex items-center px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs sm:text-sm font-medium mb-3 sm:mb-6">
           <Terminal :size="14" class="mr-1.5 sm:mr-2" />
           <span>Hello World</span>
@@ -25,7 +25,7 @@ const router = useRouter()
         </p>
         
         <div class="grid grid-cols-2 sm:flex sm:flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 mt-3 sm:mt-6">
-          <button @click="router.push('/projects')" class="w-full sm:w-auto flex items-center justify-center btn btn-primary px-4 py-2 sm:px-6 sm:py-3 text-sm md:text-base shadow-lg shadow-blue-500/30 col-span-2 sm:col-span-1">
+          <button @click="router.push('/projects')" class="w-full sm:w-auto flex items-center justify-center btn btn-primary px-4 py-2 sm:px-6 sm:py-3 text-sm md:text-base shadow-lg shadow-blue-500/30">
             <LayoutGrid :size="16" class="mr-1.5 sm:mr-2" /> 查看项目成果
           </button>
           <button @click="router.push('/skills')" class="hidden sm:flex items-center justify-center bg-blue-50 text-blue-600 hover:bg-blue-100 dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50 border border-blue-100 dark:border-blue-800 transition-colors rounded-lg font-medium px-4 py-2 sm:px-6 sm:py-3 text-sm md:text-base">
