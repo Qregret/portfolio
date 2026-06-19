@@ -25,9 +25,9 @@ const router = useRouter()
         </p>
         
         <div class="grid grid-cols-2 sm:flex sm:flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 mt-3 sm:mt-6">
-          <a href="http://13.213.88.162" target="_blank" class="w-full sm:w-auto flex items-center justify-center btn btn-primary px-4 py-2 sm:px-6 sm:py-3 text-sm md:text-base shadow-lg shadow-blue-500/30">
-            <LayoutGrid :size="16" class="mr-1.5 sm:mr-2" /> 数据大屏
-          </a>
+          <button @click="router.push('/projects')" class="w-full sm:w-auto flex items-center justify-center btn btn-primary px-4 py-2 sm:px-6 sm:py-3 text-sm md:text-base shadow-lg shadow-blue-500/30">
+            <LayoutGrid :size="16" class="mr-1.5 sm:mr-2" /> 查看项目成果
+          </button>
           <button @click="router.push('/skills')" class="hidden sm:flex items-center justify-center bg-blue-50 text-blue-600 hover:bg-blue-100 dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50 border border-blue-100 dark:border-blue-800 transition-colors rounded-lg font-medium px-4 py-2 sm:px-6 sm:py-3 text-sm md:text-base">
             <Code :size="16" class="mr-1.5 sm:mr-2" /> 探索技术栈
           </button>
