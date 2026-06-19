@@ -10,7 +10,7 @@ const visibleProjects = projects.filter(p => p.visible).sort((a, b) => {
   return 0;
 })
 
-const filterOptions = ['全部', '已上线', '研究中']
+const filterOptions = ['全部', '已上线', '往期项目']
 const activeFilter = ref('全部')
 
 const filteredProjects = computed(() => {
@@ -19,8 +19,8 @@ const filteredProjects = computed(() => {
   if (activeFilter.value === '已上线') {
     return visibleProjects.filter(p => p.status === '已上线')
   }
-  if (activeFilter.value === '研究中') {
-    return visibleProjects.filter(p => p.status === '研究中')
+  if (activeFilter.value === '往期项目') {
+    return visibleProjects.filter(p => p.status === '往期项目')
   }
   return visibleProjects
 })
